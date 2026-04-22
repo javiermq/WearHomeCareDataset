@@ -1,0 +1,9 @@
+.gradle/
+local.properties
+.idea/
+*.iml
+build/
+app/build/
+
+# Binary wrapper jar excluded in this environment
+gradle/wrapper/gradle-wrapper.jar

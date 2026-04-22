@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wear Sensor Logger</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="status_idle">Estado: inactivo</string>
+    <string name="status_recording">Estado: grabando</string>
+    <string name="median_format">%1$s mediana (|v|/s): %2$s</string>
+    <string name="na">N/A</string>
+</resources>
