@@ -17,9 +17,10 @@ from tensorflow.keras.layers import Input, LSTM, Dense, Dropout
 
 SCENE_FILES = [
     "data/scene1.csv",
- #   "data/scene2.csv",
+    "data/scene2.csv",
     "data/scene3.csv",
     "data/scene4.csv",
+ #   "data/scene5.csv",
 ]
 
 RAW_COLUMNS = ["timestamp", "sensor", "label", "valor"]
@@ -60,7 +61,7 @@ FUTURE_SECONDS = 5
 # 5 segundos pasados + instante actual + 5 segundos futuros = 11
 WINDOW_SIZE = PAST_SECONDS + 1 + FUTURE_SECONDS
 
-EPOCHS = 100
+EPOCHS = 40
 BATCH_SIZE = 2
 RANDOM_SEED = 42
 
@@ -406,7 +407,6 @@ def cross_scene_validation(scene_files):
         model.fit(
             X_train,
             y_train,
-            validation_split=0.15,
             epochs=EPOCHS,
             batch_size=BATCH_SIZE,
             verbose=1
